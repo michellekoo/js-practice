@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var a, b, result;
+		function setValues() {
+			a = Number(document.getElementById("a").value);
+			b = Number(document.getElementById("b").value);
+		}
+		function sum() {
+			setValues();
+			result = a + b;
+			alert("The sum is equal to " + result);
+		}
+		function sub() {
+			setValues();
+			result = a - b;
+			alert("The difference is equal to " + result);
+		}
+		function mult() {
+			setValues();
+			result = a * b;
+			alert("The product is equal to " + result);
+		}
+		function div() {
+			setValues();
+			result = a / b;
+			alert("The quotient is equal to " + result);
+		}
+
+	</script>
+
+</head>
+<body>
+	<div>
+		<input id="a" type="text"/>
+		<input id="b" type="text"/>
+		<input type="button" onclick="sum()" value="Sum"/>
+		<input type="button" onclick="sub()" value="Subtract"/>
+		<input type="button" onclick="mult()" value="Multiply"/>
+		<input type="button" onclick="div()" value="Divide"/>
+	</div>
+</body>
+</html>
