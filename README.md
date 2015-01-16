@@ -1,0 +1,1 @@
+A simple JavaScript calculator to add, subtract, multiply, and divide two numbers the user enters.
